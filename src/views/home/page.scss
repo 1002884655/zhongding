@@ -1,0 +1,28 @@
+.hesc_page.hesc_home {
+    position: relative;
+    overflow: hidden;
+    .hesc_banner {
+        position: relative;
+        overflow: hidden;
+        height: 240px;
+        background: #f8f8f8;
+    }
+    .hesc_moduleBox {
+        position: relative;
+        overflow: hidden;
+        margin-top: 15px;
+        min-height: 300px;
+        .hesc_left {
+            width: 270px;
+            position: relative;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        .hesc_right {
+            width: 270px;
+            position: relative;
+            overflow: hidden;
+            margin-left: 15px;
+        }
+    }
+}

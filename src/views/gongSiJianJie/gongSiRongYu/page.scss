@@ -1,0 +1,23 @@
+.hesc_page.hesc_gongSiJieShao {
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+    .hesc_listItem {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        overflow: hidden;
+        background: #eee;
+        margin-left: 15px;
+        margin-top: 15px;
+        width: 208px;
+        &:nth-child(5n + 1) {
+            margin-left: 0;
+        }
+        div {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 100%;
+        }
+    }
+}

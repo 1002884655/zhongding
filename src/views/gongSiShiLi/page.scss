@@ -1,0 +1,29 @@
+.hesc_page.hesc_gongSiShiLi {
+    position: relative;
+    overflow: visible;
+    .hesc_tab {
+        position: relative;
+        overflow: visible;
+        .hesc_item {
+            display: block;
+            line-height: 40px;
+            color: #333;
+            margin-top: 15px;
+            position: relative;
+            overflow: visible;
+            cursor: pointer;
+            user-select: none;
+            text-align: center;
+            font-size: 14px;
+            background: #eee;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &.active {
+                color: #fff;
+                z-index: 10;
+                background: #f13a3a;
+            }
+        }
+    }
+}

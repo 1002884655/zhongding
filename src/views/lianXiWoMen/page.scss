@@ -1,0 +1,14 @@
+.hesc_page.hesc_lianXiWoMen {
+    position: relative;
+    overflow: visible;
+    span {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 15px;
+        &.hesc_name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
