@@ -75,6 +75,10 @@ module.exports = {
     hotOnly: false,
     open: false, // 配置自动启动浏览器
     proxy: {
+      "/szzlApi": {
+        target: "http://172.16.25.125:82",
+        changeOrigin: true,
+      },
     }
   },
   pluginOptions: {
