@@ -10,16 +10,20 @@
                 <a class="hesc_lang" @click="setLang('Chinese')">中文版</a>
                 <a class="hesc_lang" @click="setLang('English')">English</a>
             </div>
-            <div class="hesc_tab hesc_flexH">
-                <div 
-                    class="hesc_tabItem hesc_flexItem"
-                    v-for="(item, index) in tab"
-                    :key="index"
-                    :class="{active: currentTab === item.value}">
-                    <a @click="cutTab(item)">{{ item.name }}</a>
+            <div class="hesc_tab">
+                <div class="hesc_subContainer hesc_flexH">
+                    <div 
+                        class="hesc_tabItem hesc_flexItem"
+                        v-for="(item, index) in tab"
+                        :key="index"
+                        :class="{active: currentTab === item.value}">
+                        <a @click="cutTab(item)">{{ item.name }}</a>
+                    </div>
                 </div>
             </div>
-            <router-view></router-view>
+            <div class="hesc_subPage">
+                <router-view></router-view>
+            </div>
         </div>
         <div class="hesc_mainFooter">
             <div class="hesc_link">

@@ -2,14 +2,16 @@
     <div class="hesc_page hesc_home">
         <!-- 轮播图 -->
         <div class="hesc_banner">
-            <el-carousel trigger="click" height="240px" :interval="5000">
-                <el-carousel-item v-for="item in 4" :key="item">
-                    <h3 class="small">{{ item }}</h3>
+            <el-carousel trigger="click" height="400px" :interval="5000">
+                <el-carousel-item v-for="item in banner" :key="item">
+                    <div class="hesc_bannerItem">
+                        <img :src="item.url" class="hesc_cover" alt="">
+                    </div>
                 </el-carousel-item>
             </el-carousel>
         </div>
         <!-- 模块列表 -->
-        <div class="hesc_flexH hesc_moduleBox">
+        <div class="hesc_flexH hesc_moduleBox" style="height: 320px;">
             <!-- 公司视频 -->
             <div class="hesc_left">
                 <GongSiShiPin :name="systemLang.company_display"></GongSiShiPin>
@@ -64,6 +66,20 @@ export default {
     data() {
         return {
             systemLang,
+            banner: [
+                {
+                    url: require('./img/img1.jpg'),
+                    name: '',
+                },
+                {
+                    url: require('./img/img2.jpg'),
+                    name: '',
+                },
+                {
+                    url: require('./img/img3.jpg'),
+                    name: '',
+                },
+            ],
         }
     },
     mounted() {

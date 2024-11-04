@@ -4,8 +4,9 @@
         <span class="hesc_text">{{ systemLang.address }}：{{ systemLang.address_value }}</span>
         <span class="hesc_text">{{ systemLang.post_code }}：311115</span>
         <span class="hesc_text">{{ systemLang.telephone }}：19905815631</span>
-        <span class="hesc_text">{{ systemLang.url }}：</span>
+        <span class="hesc_text">{{ systemLang.url }}：www.hzzhongding.com</span>
         <span class="hesc_text">{{ systemLang.email }}：</span>
+        <img src="@/assets/img/bg.jpg" width="100%" style="margin-top: 20px;" alt="">
     </div>
 </template>
 <script>

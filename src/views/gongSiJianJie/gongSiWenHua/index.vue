@@ -1,6 +1,7 @@
 <template>
     <div class="hesc_page hesc_gongSiJieShao">
         <div class="hesc_text" v-html="systemLang.company_culture_content"></div>
+        <img src="@/assets/img/bg.jpg" width="100%" style="margin-top: 20px;" alt="">
     </div>
 </template>
 <script>

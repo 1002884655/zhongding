@@ -4,14 +4,15 @@
     .hesc_banner {
         position: relative;
         overflow: hidden;
-        height: 240px;
+        // height: 320px;
         background: #f8f8f8;
     }
     .hesc_moduleBox {
         position: relative;
         overflow: hidden;
-        margin-top: 15px;
+        margin: 15px auto 0;
         min-height: 300px;
+        width: 1100px;
         .hesc_left {
             width: 270px;
             position: relative;

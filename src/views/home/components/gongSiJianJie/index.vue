@@ -2,7 +2,7 @@
     <div class="hesc_components hesc_gongSiJianJie">
         <ItemBorder :name="name" @more="$router.push({ name: 'gongSiJieShao' })">
             <div class="hesc_content">
-                <span :style="{ lineHeight: langKey === 'Chinese' ? '28px' : '19px' }">{{ systemLang.brief_introduction_content }}</span>
+                <span :style="{ lineHeight: langKey === 'Chinese' ? '28px' : '19px' }" v-html="systemLang.brief_introduction_content"></span>
             </div>
         </ItemBorder>
     </div>

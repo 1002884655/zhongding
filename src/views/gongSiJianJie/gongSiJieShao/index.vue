@@ -1,6 +1,7 @@
 <template>
     <div class="hesc_page hesc_gongSiJieShao">
-        <span class="hesc_text">{{ systemLang.co_introduction_content }}</span>
+        <span class="hesc_text" v-html="systemLang.co_introduction_content"></span>
+        <img src="@/assets/img/bg.jpg" width="100%" style="margin-top: 20px;" alt="">
     </div>
 </template>
 <script>

@@ -1,6 +1,8 @@
 .hesc_page.hesc_gongSiShiLi {
     position: relative;
     overflow: visible;
+    width: 1100px;
+    margin: 0 auto;
     .hesc_tab {
         position: relative;
         overflow: visible;
@@ -15,14 +17,14 @@
             user-select: none;
             text-align: center;
             font-size: 14px;
-            background: #eee;
+            background: #dbdbdb;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             &.active {
                 color: #fff;
                 z-index: 10;
-                background: #f13a3a;
+                background: #ed0b0d;
             }
         }
     }
