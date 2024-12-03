@@ -33,9 +33,9 @@
             </div>
             <div class="hesc_icp">
                 <span>{{ systemLang.copyright }}</span>
-                <a>冀ICP备07013566号-1</a>
+                <a href="https://beian.miit.gov.cn" target="_blank">浙ICP备2024137026号-1</a>
             </div>
-            <span class="hesc_copyRight">Copyright © 2006-2023 www.zhongding.net All rights reserved</span>
+            <span class="hesc_copyRight">Copyright © 2006-2023 www.zhongding.com All rights reserved</span>
         </div>
     </div>
 </template>
