@@ -131,7 +131,7 @@ const routes = [
         path: 'gongSiXinWen',
         name: 'gongSiXinWen',
         meta: { title: '公司新闻', },
-        redirect: { name: 'gongSiFaZhan', },
+        redirect: { name: 'xiangMuDongTai', },
         component: () => import('@/views/gongSiXinWen/index.vue'),
         children: [
           {

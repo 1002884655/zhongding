@@ -25,8 +25,12 @@ export default {
     data() {
         return {
             systemLang,
-            currentTab: 'gongSiFaZhan',
+            currentTab: 'xiangMuDongTai',
             tab: [
+                {
+                    name: systemLang.project_status,
+                    value: 'xiangMuDongTai',
+                },
                 {
                     name: systemLang.company_development,
                     value: 'gongSiFaZhan',
@@ -34,10 +38,6 @@ export default {
                 {
                     name: systemLang.marketing,
                     value: 'shiChangYingXiao',
-                },
-                {
-                    name: systemLang.project_status,
-                    value: 'xiangMuDongTai',
                 },
             ],
         }

@@ -1,4 +1,81 @@
-.hesc_page.hesc_gongSiJieShao {
+.hesc_page.hesc_xiangMuDongTai {
     position: relative;
     overflow: hidden;
+    .hesc_listItem {
+        position: relative;
+        overflow: hidden;
+        margin-top: 10px;
+        .hesc_title {
+            position: relative;
+            overflow: hidden;
+            align-items: center;
+            span {
+                font-size: 14px;
+                line-height: 20px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &:first-child {
+                    margin-right: 20px;
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+                &:last-child {
+                    font-size: 12px;
+                    color: #999;
+                }
+            }
+        }
+        .hesc_contentTitle {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+        .hesc_content {
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            word-break: break-all;
+            margin-top: 20px;
+        }
+        .hesc_imgs {
+            position: relative;
+            overflow: hidden;
+            font-size: 0;
+            text-align: center;
+            margin-top: 20px;
+            div {
+                display: inline-block;
+                vertical-align: middle;
+                width: 300px;
+                height: 300px;
+                margin-right: 10px;
+                margin-top: 10px;
+                position: relative;
+                overflow: hidden;
+                background: #ddd;
+                video {
+                    width: 100%;
+                    height: 100%;
+                    background: #000;
+                }
+            }
+        }
+    }
+    .hesc_bigImg {
+        position: fixed;
+        inset: 0;
+        z-index: 10000;
+        background: rgba(0, 0, 0, .8);
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
 }

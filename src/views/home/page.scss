@@ -6,6 +6,29 @@
         overflow: hidden;
         // height: 320px;
         background: #f8f8f8;
+        .hesc_bannerItem {
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            .hesc_name {
+                display: block;
+                position: absolute;
+                z-index: 2;
+                left: 0;
+                bottom: 0;
+                font-size: 14px;
+                color: #fff;
+                line-height: 30px;
+                height: 30px;
+                background: rgba(0, 0, 0, .8);
+                width: 100%;
+                padding-bottom: 30px;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
     }
     .hesc_moduleBox {
         position: relative;

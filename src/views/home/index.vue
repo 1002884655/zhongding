@@ -4,8 +4,9 @@
         <div class="hesc_banner">
             <el-carousel trigger="click" height="400px" :interval="5000">
                 <el-carousel-item v-for="item in banner" :key="item">
-                    <div class="hesc_bannerItem">
-                        <img :src="item.url" class="hesc_cover" alt="">
+                    <div class="hesc_bannerItem" @click="bannerClick(item)">
+                        <img :src="item.url" class="hesc_contain" alt="">
+                        <span class="hesc_name">{{ item.name }}</span>
                     </div>
                 </el-carousel-item>
             </el-carousel>
@@ -52,7 +53,7 @@ import YouQingLianJie from './components/youQingLianJie/index.vue'
 import language from '@/assets/js/language'
 const { localStorage: { language: windowLang } } = window
 const langKey = windowLang || 'Chinese'
-const systemLang = language[langKey].home
+const { home: systemLang, gong_si_xin_wen: { project_list } } = language[langKey]
 
 export default {
     components: {
@@ -68,8 +69,9 @@ export default {
             systemLang,
             banner: [
                 {
-                    url: require('./img/img1.jpg'),
-                    name: '',
+                    url: require('@/assets/img/project/1/8.jpg'),
+                    name: project_list[0].title,
+                    routeName: 'xiangMuDongTai',
                 },
                 {
                     url: require('./img/img2.jpg'),
@@ -93,6 +95,11 @@ export default {
     methods: {
         init() {
 
+        },
+        bannerClick({ routeName }) {
+            if(routeName) {
+                this.$router.push({ name: routeName })
+            }
         },
     },
 }

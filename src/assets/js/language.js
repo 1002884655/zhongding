@@ -19,7 +19,7 @@ const language = {
             products_show: '产品展示',
             company_culture: '企业文化',
             company_culture_content: '企业精神：超越自我，追求卓越<br/>核心价值观：诚实、守信、和谐、共赢<br/>经营理念：让我们的产品和服务为客户创造价值，让员工与公司共同成长<br/>公司愿景：做世界知名的有色金属加工设备及解决方案的供应商',
-            company_news: '公司新闻',
+            company_news: '公司新闻/项目动态',
             friendship_link: '友情链接',
             product_name: [
                 '涂炭设备',
@@ -59,6 +59,12 @@ const language = {
             company_development: '公司发展',
             marketing: '市场营销',
             project_status: '项目动态',
+            project_list: [
+                {
+                    title: '近日泰国客户2条机列宽度2100mm,生产速度120m/min的亲水箔涂层线投产',
+                    content: '',
+                },
+            ],
         },
         lian_xi_wo_men: {
             company_name: '杭州重鼎智能设备有限公司',
@@ -222,10 +228,6 @@ const language = {
                 `,
             },
             {
-                name: '老式料车',
-                desc: '',
-            },
-            {
                 name: '新式退火炉',
                 desc: '',
             },
@@ -295,7 +297,7 @@ const language = {
             products_show: 'Products Show',
             company_culture: 'Company Culture',
             company_culture_content: 'Company spirit<br/>Go beyond oneself; striving for excellence<br/>Core values<br/>Honesty, trustworthiness, harmony and win-win<br/>Business philosophy<br/>Let our products and service create value for customers. Let employees grow together with the company.<br/>Company vision<br/>To be a world-renowned supplier of non-ferrous metals processing equipment and solutions',
-            company_news: 'Company News',
+            company_news: 'Company News / Project Updates',
             friendship_link: 'Friendship Link',
             product_name: [
                 'Coating equipment',
@@ -336,6 +338,12 @@ const language = {
             company_development: 'Company Development',
             marketing: 'Marketing',
             project_status: 'Project Status',
+            project_list: [
+                {
+                    title: 'Recently, a hydrophilic foil coating line with a width of 2100mm and a production speed of 120m/min for two machine columns has been put into operation in Thailand.',
+                    content: '',
+                },
+            ],
         },
         lian_xi_wo_men: {
             company_name: 'Hangzhou Zhongding Intelligent Equipment Co., Ltd',
@@ -498,10 +506,6 @@ const language = {
                     <br/>* Compressed air consumption requirement: 1m3/h
                     <br/>* Power requirements: Three-phase 380V±5%, 50Hz±2%
                 `,
-            },
-            {
-                name: 'Old style material truck',
-                desc: ``,
             },
             {
                 name: 'New-style annealing furnace',

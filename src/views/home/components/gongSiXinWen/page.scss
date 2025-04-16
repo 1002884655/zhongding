@@ -29,6 +29,8 @@
                 line-height: 20px;
                 &:nth-child(2) {
                     color: #999;
+                    min-width: 110px;
+                    text-align: right;
                 }
             }
         }
